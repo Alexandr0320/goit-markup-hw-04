@@ -469,6 +469,7 @@ img {
 }
 
 .menu-link {
+  display: block;
   color: var(--primary-text-color);
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -482,8 +483,8 @@ img {
   padding: var(--title-padding);
 }
 
-.menu-item:hover,
-.menu-item:focus {
+.menu-link:hover,
+.menu-link:focus {
   box-shadow: var(--portfolio-card-shadow);
 }
 
