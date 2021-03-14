@@ -183,6 +183,7 @@ img {
 }
 
 .connection-list .connection-link {
+  display: flex;
   align-items: center;
 }
 
@@ -367,8 +368,7 @@ img {
 .team-element {
   background-color: var(--background-color);
 
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 30px 32px;
 }
 
 .team-item {
@@ -397,10 +397,6 @@ img {
 .team .icons-list {
   display: flex;
   justify-content: space-between;
-
-  padding-top: 16px;
-  margin-left: 32px;
-  margin-right: 32px;
 }
 
 .icons-list:not(:last-child) {
@@ -429,20 +425,27 @@ img {
 
 /*   ============= Постоянные клиенты ===========     */
 
-.partners-list {
-  display: flex;
-  justify-content: space-between;
-
+.clients {
+  padding-top: var(--section-pt);
   padding-bottom: var(--section-pb);
 }
 
-.section-title {
-  padding-top: var(--section-pt);
-  padding-bottom: 50px;
-  text-align: center;
+.clients-list {
+  display: flex;
+  justify-content: space-between;
 }
 
-.partners-thumb {
+.clients-title {
+  color: var(--accent-text-color);
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+
+  margin-bottom: 50px;
+}
+
+.clients-thumb {
   width: 170px;
   height: 90px;
   border: 1px solid var(--icons-color);
@@ -452,13 +455,13 @@ img {
   align-items: center;
 }
 
-.partner-logo {
+.client-logo {
   fill: var(--icons-color);
 }
-.partners-link:hover .partner-logo {
+.clients-link:hover .client-logo {
   fill: var(--accent-color);
 }
-.partners-link:hover .partners-thumb {
+.clients-link:hover .clients-thumb {
   border: 1px solid var(--accent-color);
 }
 
